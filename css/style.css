@@ -1,0 +1,29 @@
+html{
+    font-size: 62.5%;
+}
+
+.lista{
+    color: blue;
+    list-style: none;
+    text-align: left;
+    font-size: 150%;
+    text-decoration: underline;color: blue;
+    font-weight: bold;    
+}
+
+.centrar{
+    color: blue;
+    text-decoration: underline;color: blue;
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.imagen{
+    width: 100vw;
+    
+}
+
+li{
+    display: inline-block;
+}
