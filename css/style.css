@@ -1,50 +1,84 @@
-/* font */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Open+Sans&display=swap');
-/* font-family: 'Libre Franklin', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-
+/* html */
 html{
     font-size: 62.5%;
 }
 
+/* pag. Contacto */
+.contacto{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+/* nav */
+.nav{
+color: black;
+font-weight: bold;
+}
+
+ul:hover{
+    text-decoration: solid;
+    color:red;
+    
+}
+
 .lista{
+    color: white;
     display: flex;
     flex-direction: row;
-    color:white;
     list-style: none;
-    text-align: left;
-    font-size: 150%;
-    font-weight: bold;   
+    font-size: 180%;
     justify-content: space-around;  
+  
 }
+
 
 .centrar{
-    color: white;
-    text-decoration: underline;color: white;
     text-align: center;
-    font-size: 300%;
-    font-weight: bold;
-}
+    font-size: 400%;
+    }
 
-
+/* titulo principal */
 h1{
     text-decoration: underline;
+    font-size: 50px;
+}
+
+/* header */
+header{
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px; 
+    background-color: black;
+    height: 130px;
+     }
+
+/* main */
+
+.divpapi{
+    text-transform: uppercase;
+    margin-bottom: 20px ;
+    display: flex;
+}
+.divpapidos{
+    text-transform: uppercase;
+    margin-bottom: 20px ;
+    display: flex;
+}
+
+.imagen{
+background-image: url(../medios/esscentials.jpg)
+}  
+
+.imagen2{
+    background-image: url(../medios/Pumasssslipstreamuno.jpg);
+    background-size: cover;
 }
 
 
-header{
-    color: white;
-    position: sticky;
-    top: 0px;
-    background-image: url(../medios/esscentials.jpg);
-    height: 130px;
-        }
-    
+/* footer */
     footer{
         background-color: black;           
     }
@@ -56,6 +90,186 @@ header{
     .flex{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: start;
         
     }
+
+    /* pages */
+
+    /* knu */
+
+    .imgk{
+        background-image: url(../medios/knuilustrativa.jpg);
+    }
+
+    .imgk2{
+        background-image: url(../medios/knuilustrativa2.jpg);
+    }
+
+    .imgk3{
+        background-image: url(../medios/knuu.jpg);
+    }
+
+    /* campus */
+
+    .campus1{
+        background-image: url(../medios/esscentials.jpg)
+    }
+
+    .campus2{
+        background-image: url(../medios/Pumasssssslipstreamm.jpg);
+    
+    }
+
+    .campus3{
+        background-image: url(../medios/esscentials.jpg)
+    }
+
+    /* new balance 550 */
+
+    .cinco1{
+        background-image: url(../medios/nb550.jpg);
+
+    }
+
+    .cinco2{
+        background-image: url(../medios/nb.jpg); 
+        
+    }
+
+    .cinco3{
+        background-image: url(../medios/newbalance.jpg);
+    }
+
+    /* adi2000 */
+
+    .adi1{
+        background-image: url(../medios/esscentials.jpg);
+    }
+
+    .adi2{
+        background-image: url(../medios/Pumasssssslipstreamm.jpg);
+    }
+
+    .adi3{
+        background-image: url(../medios/esscentials.jpg);
+    }
+
+    /* MR530 */
+
+    .mr1{
+        background-image: url(../medios/batman.jpg);
+    }
+
+    .mr2{
+        background-image: url(../medios/ilustrativa.jpg);
+    }
+
+    .mr3{
+        background-image: url(../medios/Pumaslipstream.jpg);
+    }
+
+    .slipstream1{
+        background-image: url(../medios/patrick.jpg);
+    }
+
+    .slipstream2{
+        background-image: url(../medios/ilustrativa.jpg);
+    }
+
+    .slipstream3{
+        background-image: url(../medios/zapas.jpg);
+    }
+
+    /* suede */
+
+    .suede1{
+        background-image: url(../medios/esscentials.jpg);
+    }
+
+    .suede2{
+        background-image: url(../medios/newbalance.jpg);
+    }
+
+    .suede3{
+        background-image: url(../medios/american.jpg);
+    }
+
+
+/* mobile */
+@media screen and (max-width:500px) {
+
+    header{
+        position: sticky;
+        top: 0px;
+
+       }
+    
+    
+       .lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 100%;
+        padding-left: 10px;
+        
+       }
+       
+       .centrar{
+        font-size: 300%;
+       }
+    
+    h1{
+        font-size: 25px;
+    }
+    
+        nav{
+            width: 100%;
+            margin-top: 5px;
+            color: white;
+        }   
+        
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: 
+        "titulo1"
+        "texto1"
+        "img1"
+        "titulo2"
+        "texto2"
+        "img2"
+        "titulo3"
+        "texto3"
+        "img3";
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,800px) repeat(3,500px) repeat(4,300px); 
+        gap: 0px;
+
+        .conteiner-grid{
+            display: grid;
+            grid-template-areas: 
+            "titulo11"
+            "texto11"
+            "img11"
+            "titulo22"
+            "texto22"
+            "img22"
+            "titulo33"
+            "texto33"
+            "img33";
+
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,800px) repeat(3,500px) repeat(4,300px); 
+            gap: 0px;
+
+        }
+
+}
+   
+     
+
+
+
+}
+    
